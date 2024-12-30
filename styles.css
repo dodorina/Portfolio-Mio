@@ -91,6 +91,10 @@ button.menu-btn{
  display: none;
   
 }}
+.close-btn i{
+  font-size: 32px;
+}
+
 /* FINE HAMBURGER BUTTON  */
 main.container{
   background-color: #f6f6f6;
@@ -458,17 +462,38 @@ nav{
       color:#474747 ;
     }
  .slick-slider .slick-arrow {
-    border-radius: 50%;
-    /* width: 50px;
-    height: 50px; */
-    border: 1px solid black;
-    background: black;
+    /* border-radius: 50%;
+   
+    border: 1px solid black; */
+    z-index: 9999;
+    position: absolute; 
+
+
  }
 
+ .slick-slider .slick-arrow:before{
+  display: none;
+  /* color: black;
+  font-size: 32px; */
 
+ }
 
- .slick-next {}
- .slick-prev{}
+ .slick-slider .slick-arrow.slick-next {
+
+  top: 50%;
+  right: -5px;
+ }
+
+ .slick-slider .slick-arrow.slick-prev{
+  
+  top: 50%;
+  left: -20px;
+ }
+
+ .slick-slider .slick-arrow i {
+  font-size: 32px;
+  color: black;
+ }
 
 
  /*   ABOUT ME  start  ACCORDION */
@@ -652,12 +677,12 @@ nav{
 .title-accordion .icon-circle{
     border: 2px solid black;
    display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     text-align: center;
     margin-right: 12px;
-    font-size: 10px;
+    font-size: 20px;
 }
 
  /*    End  ACCORDION */
@@ -1029,16 +1054,28 @@ input{
    
 
 }
-.pagina-speciale{
-    background-color: black;
-    
+.thank-you-page .container{
+
+  margin-top: 60px;
 }
 .thank-you h1{
 text-align: center;
+color: #474747;
 }
-.link-page a {
+.home-link {
   text-decoration: none;
   color: black;
+  display: block;
+  margin: auto;
+  width: 180px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+.home-link:hover{
+  box-shadow: 0px 0px 16px #a09d9d;
 }
 /* SCROLL  */
 
