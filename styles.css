@@ -42,6 +42,10 @@ header{
 /* HAMBURGER BUTTON  */
 button.menu-btn{
   border: none;
+
+  @media (max-width: 479px) {
+    left: 0px;
+  }
   @media (max-width: 767px) {
   display: flex;
   flex-direction: column;
@@ -146,17 +150,20 @@ nav{
 }
 
  .logo-description img{
-  
+  height: 75px;
+  width: 75px;
+  border-radius:50%;
+  border: black solid 1px;
     /* height: 28px;
     width: 48px; */
     @media (max-width: 767px) {
       position: absolute;
       right: 40%;
+      height: 60px;
+      width: 60px;
+      top: 5px;
     }
-    height: 75px;
-    width: 75px;
-    border-radius:50%;
-    border: black solid 1px;
+  
 
     }
     /* .mobile-menu{
@@ -775,6 +782,10 @@ width: 100%;
 form{
    
 }
+.email-adress{
+  text-decoration: none;
+  color: black;
+}
 
 textarea{
    width: 100%;
@@ -881,6 +892,10 @@ width:50%; } */
 
 
 input{
+  @media (max-width: 421px) {
+    margin: 2px;
+
+  }
     width: 100%;
     height: 33px;
     font-style: italic;
@@ -1065,12 +1080,21 @@ margin-bottom: -8px;
 /* height: 28px;
 width: 48px; */
 
+@media (max-width: 421px) {
+  height: 35px;
+  width: 35px;
+
+}
+
 height: 50px;
 width: 50px;
 border-radius:50%;
 border: black solid 1px;
 
 margin-top: 10px;
+
+
+
 }    
 
 .footer-section{
@@ -1103,3 +1127,7 @@ margin-top: 10px;
 .copyright-testo p{
   color: #333333;
 }
+
+
+
+@media (max-width: 421px) {}
